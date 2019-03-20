@@ -46,7 +46,7 @@ class App extends Component {
     const { loggedIn } = this.state;
     let display;
     if (loggedIn){
-      header = <h2>{Cookies.get('username')}'s To-Do List</h2>
+      header = <h2>{Cookies.get('username')} To-Do List</h2>
       display = <div> <h1>you are logged in!</h1>
       <button type = "submit" name= "submit" value = "Logout" onClick={() => this.handleLogout()}>Log out</button> </div>
 
